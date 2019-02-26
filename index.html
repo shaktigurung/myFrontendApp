@@ -12,7 +12,7 @@
     <header>
         <h1>TODO</h1>
         <div class="addTodo">
-            <input type="text" class="textfield" placeholder="add todo" /> <button class="submit">Add</button>
+            <input type="text" id= "textfield" class="textfield" placeholder="add todo" /> <button onclick = "addTodo()" class="submit">Add</button>
         </div>
         <nav class="filter">
             <button class="selected">all</button>
@@ -20,7 +20,17 @@
             <button>completed</button>
         </nav>
     </header>
-    <main class="filter"></main>
-    <footer></footer>
+   
+    <ul class="todos">
+        <li class="todo"><label for=""><input type="checkbox" /><span class="title">Todo</span></label></li>
+        <li class="todo"><label for=""><input type="checkbox" /><span class="title">Todo</span></label></li>
+        <li class="todo"><label for=""><input type="checkbox" /><span class="title">Todo</span></label></li>
+        <li class="todo"><label for=""><input type="checkbox" /><span class="title">Todo</span></label></li>
+    </ul>
+   
+    <footer>
+        <span><span class="remaining">4</span> items left</span>
+        <button class="submit"> Clear Completed </button>
+    </footer>
 </body>
 </html>

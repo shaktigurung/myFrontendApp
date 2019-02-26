@@ -31,11 +31,19 @@ body {
     border: none;
   }
   
-  .selected {
+ .filter .selected {
     border-bottom: 2px solid blue;
   }
   
   .todos {
     list-style: none;
     padding: 0;
+  }
+  
+  footer {
+    display: flex;
+  }
+  
+  footer span {
+    flex-grow: 1;
   }
